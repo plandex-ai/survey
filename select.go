@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/AlecAivazis/survey/v2/core"
-	"github.com/AlecAivazis/survey/v2/terminal"
+	"github.com/plandex-ai/survey/v2/core"
+	"github.com/plandex-ai/survey/v2/terminal"
 )
 
 /*

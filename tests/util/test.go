@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/AlecAivazis/survey/v2"
+	"github.com/plandex-ai/survey/v2"
 )
 
 type TestTableEntry struct {

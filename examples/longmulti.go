@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	survey "github.com/AlecAivazis/survey/v2"
+	survey "github.com/plandex-ai/survey/v2"
 )
 
 // the questions to ask

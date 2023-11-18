@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/AlecAivazis/survey/v2"
+import "github.com/plandex-ai/survey/v2"
 
 func main() {
 	color := ""

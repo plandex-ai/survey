@@ -6,10 +6,10 @@ package survey
 import (
 	"testing"
 
-	"github.com/AlecAivazis/survey/v2/terminal"
 	expect "github.com/Netflix/go-expect"
 	pseudotty "github.com/creack/pty"
 	"github.com/hinshun/vt10x"
+	"github.com/plandex-ai/survey/v2/terminal"
 )
 
 func RunTest(t *testing.T, procedure func(expectConsole), test func(terminal.Stdio) error) {

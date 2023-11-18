@@ -10,8 +10,8 @@ This project and its contibutors are expected to uphold the [Go Community Code o
 
 ## Getting help
 
-* [Open an issue](https://github.com/AlecAivazis/survey/issues/new/choose)
-* Reach out to `@AlecAivazis` or `@mislav` in the Gophers slack (please use only when urgent)
+- [Open an issue](https://github.com/plandex-ai/survey/issues/new/choose)
+- Reach out to `@AlecAivazis` or `@mislav` in the Gophers slack (please use only when urgent)
 
 ## Submitting a contribution
 

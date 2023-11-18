@@ -1,25 +1,23 @@
 # Survey
 
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg)](https://pkg.go.dev/github.com/AlecAivazis/survey/v2)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg)](https://pkg.go.dev/github.com/plandex-ai/survey/v2)
 
 A library for building interactive and accessible prompts on terminals supporting ANSI escape sequences.
 
 ⚠️ This project is no longer maintained. For an alternative, please check out: https://github.com/charmbracelet/bubbletea ⚠️
 
-Hey everyone! I finally came to terms with the fact that I can no longer dedicate enough time to keep this library alive. 
+Hey everyone! I finally came to terms with the fact that I can no longer dedicate enough time to keep this library alive.
 This project outgrew my wildest expectations and was such a great experience. If someone else wants to take over maintainence,
 please reach out
 
-
 <img width="550" src="https://thumbs.gfycat.com/VillainousGraciousKouprey-size_restricted.gif"/>
-
 
 ```go
 package main
 
 import (
     "fmt"
-    "github.com/AlecAivazis/survey/v2"
+    "github.com/plandex-ai/survey/v2"
 )
 
 // the questions to ask
@@ -371,7 +369,7 @@ By default, users can select all of the multi-select options using the right arr
 
 ```golang
 import (
-    "github.com/AlecAivazis/survey/v2"
+    "github.com/plandex-ai/survey/v2"
 )
 
 number := ""
@@ -386,7 +384,7 @@ Also by default, users can use the left arrow key to unselect all of the options
 
 ```golang
 import (
-    "github.com/AlecAivazis/survey/v2"
+    "github.com/plandex-ai/survey/v2"
 )
 
 number := ""
@@ -397,7 +395,6 @@ prompt := &survey.Input{
 survey.AskOne(prompt, &number, survey.WithRemoveSelectNone())
 ```
 
-
 ### Changing the input rune
 
 In some situations, `?` is a perfectly valid response. To handle this, you can change the rune that survey
@@ -405,7 +402,7 @@ looks for with `WithHelpInput`:
 
 ```golang
 import (
-    "github.com/AlecAivazis/survey/v2"
+    "github.com/plandex-ai/survey/v2"
 )
 
 number := ""
@@ -424,7 +421,7 @@ follows the patterns outlined [here](https://github.com/mgutz/ansi#style-format)
 
 ```golang
 import (
-    "github.com/AlecAivazis/survey/v2"
+    "github.com/plandex-ai/survey/v2"
 )
 
 number := ""
@@ -497,14 +494,14 @@ For some examples, you can see any of the tests in this repo.
 
 survey aims to support most terminal emulators; it expects support for ANSI escape sequences.
 This means that reading from piped stdin or writing to piped stdout is **not supported**,
-and likely to break your application in these situations. See [#337](https://github.com/AlecAivazis/survey/pull/337#issue-581351617)
+and likely to break your application in these situations. See [#337](https://github.com/plandex-ai/survey/pull/337#issue-581351617)
 
 ### Why isn't Ctrl-C working?
 
 Ordinarily, when you type Ctrl-C, the terminal recognizes this as the QUIT button and delivers a SIGINT signal to the process, which terminates it.
 However, Survey temporarily configures the terminal to deliver control codes as ordinary input bytes.
 When Survey reads a ^C byte (ASCII \x03, "end of text"), it interrupts the current survey and returns a
-`github.com/AlecAivazis/survey/v2/terminal.InterruptErr` from `Ask` or `AskOne`.
+`github.com/plandex-ai/survey/v2/terminal.InterruptErr` from `Ask` or `AskOne`.
 If you want to stop the process, handle the returned error in your code:
 
 ```go

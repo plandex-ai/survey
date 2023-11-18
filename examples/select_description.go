@@ -5,7 +5,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/AlecAivazis/survey/v2"
+	"github.com/plandex-ai/survey/v2"
 )
 
 type Meal struct {
