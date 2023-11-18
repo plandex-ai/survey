@@ -77,7 +77,6 @@ var SelectQuestionTemplate = `
 {{- color "default+hb"}}{{ .Message }}{{ .FilterMessage }}{{color "reset"}}
 {{- if .ShowAnswer}}{{color "cyan"}} {{.Answer}}{{color "reset"}}{{"\n"}}
 {{- else}}
-  {{- "  "}}{{- color "cyan"}}[Use arrows to move, type to filter{{- if and .Help (not .ShowHelp)}}, {{ .Config.HelpInput }} for more help{{end}}]{{color "reset"}}
   {{- "\n"}}
   {{- range $ix, $option := .PageEntries}}
     {{- template "option" $.IterateOption $ix $option}}
