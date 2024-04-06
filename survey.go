@@ -47,7 +47,7 @@ func defaultAskOptions() *AskOptions {
 				},
 				SelectFocus: Icon{
 					Text:   ">",
-					Format: "cyan+b",
+					Format: "cyan+hb",
 				},
 			},
 			Filter: func(filter string, value string, index int) (include bool) {
